@@ -16,6 +16,8 @@ This repo consists of two sketches:
 
 Please note that this is definitely not a "state of the art" sketch but it works and can be a possible source of information for you.
 
+To reduce further power draining components I wanted to remove the power led. However when trying to remove it with plyers I broke the led but it had the same effect. The Arduino nano still worked and the power use was reduced.
+
 Schema below:<br>
 (Everything is added to a breadboard but that made the schema less readable)<br>
 ![schema](RF-ds18b20-LP-NoBreadboard.jpg)
