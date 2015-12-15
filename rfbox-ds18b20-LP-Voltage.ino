@@ -69,8 +69,8 @@ v 0.1    Read temperature and send via RF
   The middle (connection between two resistors) goes to Arduino A0
 */
 #define ReadVoltagePin A0
-int ResistorR1 = 1000000;  // 1 MΩ
-int ResistorR2 = 470000; // 470 KΩ
+long int ResistorR1 = 1000000;  // 1 MΩ
+long int ResistorR2 = 470000; // 470 KΩ
 float VoltageDivider = (ResistorR1 + ResistorR2) / ResistorR2;
 
 
