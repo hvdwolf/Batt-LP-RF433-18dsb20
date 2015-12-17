@@ -17,8 +17,8 @@
                 D11 -|     |-             3.3V			
                 D12 -|_____|- D13         LED/SCK
 
-v 0.3    Add Rocketstream LowPower library
-v 0.2    Remove led blink
+v 0.3    Add Rocketstream LowPower library (HvdW)
+v 0.2    Remove led blink (HvdW)
 v 0.1    Read temperature and send via RF
 
  * Generic Sender code : Send a value (counter) over RF 433.92 mhz
@@ -242,6 +242,7 @@ void loop()
  ReadTemperature();
  // Max downtime is 8 seconds. I want more.
  // Stupidly do it a number of times -> 5x is 40 seconds
+ // Measurement itself takes ~7 seconds.
  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
