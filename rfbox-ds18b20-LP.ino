@@ -247,7 +247,7 @@ void loop()
  // Stupidly do it a number of times
  // Measurement itself takes ~7 seconds.
  // 75 times -> 75*8 = 600 secs is 10 mins.
- for(i=0; i<30;i++)
+ for(i=0; i<75;i++)
  {
  	LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
  }
