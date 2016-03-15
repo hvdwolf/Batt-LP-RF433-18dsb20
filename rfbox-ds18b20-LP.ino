@@ -238,15 +238,17 @@ void setup()
 
 void loop()
 {
+ int i;
+ 
  // Read the temperature
  ReadTemperature();
  // Max downtime is 8 seconds. I want more.
- // Stupidly do it a number of times -> 5x is 40 seconds
+ // Stupidly do it a number of times
  // Measurement itself takes ~7 seconds.
- LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
- LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
- LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
- LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
- LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+ // 75 times -> 75*8 = 600 secs is 10 mins.
+ for(i=0; i<30;i++)
+ {
+ 	LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+ }
 }
 
