@@ -39,7 +39,7 @@ v 0.1    Read temperature and send via RF
 // Includes
 #include <OneWire.h> // http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip
 #include <DallasTemperature.h> // http://download.milesburton.com/Arduino/MaximTemperature/DallasTemperature_LATEST.zip
-#include <LowPower.h>  // https://github.com/hvdwolf/Low-Power
+#include <LowPower.h>  // https://github.com/rocketscream/Low-Power
 
 // Define vars
 #define senderPin 4
