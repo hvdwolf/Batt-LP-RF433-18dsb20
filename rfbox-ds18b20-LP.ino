@@ -1,6 +1,6 @@
 /*
                  Arduino Nano V3
-	                    _____
+                      _____
   RX             D0 -|  N  |- 
   TX             D1 -|  A  |-             GND
   RESET             -|  N  |-             RESET
@@ -17,6 +17,7 @@
                 D11 -|     |-             3.3V			
                 D12 -|_____|- D13         LED/SCK
 
+v 0.4	Simply add loop for downtime.
 v 0.3    Add Rocketstream LowPower library (HvdW)
 v 0.2    Remove led blink (HvdW)
 v 0.1    Read temperature and send via RF
