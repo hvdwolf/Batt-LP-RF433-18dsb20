@@ -1,4 +1,4 @@
-# Batt-LP-RF433-18dsb20
+# Batt-LP-RF433-ds18b20
 Battery powered Arduino nano featuring 433 MHz TX with ds18b20 temperature sensor
 
 This repo is based on the [rfbox-ds18b20.ino](https://github.com/incmve/generic-rfbox/blob/development/Sketches/rfbox-ds18b20.ino) from the generic rf-box by incmve: https://github.com/incmve/generic-rfbox, which is again based on the [generic 433 sender](https://github.com/Yves911/generic_433_sender) from Yves Grange.<br>
